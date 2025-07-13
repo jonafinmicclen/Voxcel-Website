@@ -1,0 +1,18 @@
+---
+import "@/styles/global.css";
+import MainHead from '@/components/MainHead.astro';
+import HeaderBar from '@/components/HeaderBar.astro';
+const { title = "Voxcel" } = Astro.props;
+---
+
+<html>
+  <head>
+    <MainHead {title}>
+  </head>
+
+  <body class="bg-palette-primary">
+    <HeaderBar>
+    <main class="grow"><slot /></main>
+  </body>
+  
+</html>

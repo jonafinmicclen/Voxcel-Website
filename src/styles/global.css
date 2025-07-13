@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+
+    --color-mint-500: oklch(0.72 0.11 178);
+
+    --color-palette-light: oklch(0.9413 0.0143 343.21);
+    --color-palette-primary: oklch(0.826 0.0448 134.71);
+    --color-palette-secondary: oklch(0.6497 0.0675 149.41);
+    --color-palette-tertiary: oklch(0.4577 0.0277 224.25);
+    --color-palette-quaternary: oklch(0.2964 0.006 314.73);
+
+    --font-poppins: Poppins, sans-serif;
+
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+
+:root {
+    --lavender-blush: #f3e8eeff;
+    --ash-gray: #bacdb0ff;
+    --cambridge-blue: #729b79ff;
+    --paynes-gray: #475b63ff;
+    --raisin-black: #2e2c2fff;
+}
