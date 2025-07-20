@@ -1,11 +1,31 @@
-<section id='about' class=" flex flex-col xl:flex-row justify-between items-start max-w-3xl xl:max-w-6xl w-full p-5">
+---
+import { Image } from 'astro:assets';
+import cough from '@/images/cough.png';
+---
 
-    <p class="text-4xl xl:text-xl font-mono w-1/1 xl:w-1/2">
-        We empower users through cough and voice analysis, offering early screening, personalized monitoring, and clinical insights — all from a simple audio sample.<br/>
-        <br/>Voxel is your trusted partner at the intersection of medical science and deep technology. </p>
 
-    <p class="font-lg font-mono w-1/1 xl:w-1/2">
-        Image will go here
-    </p>
+<section id='about' class=" flex flex-col xl:flex-row justify-between items-start max-w-3xl xl:max-w-6xl w-full p-5 gap-5">
+
+    <div class="w-full xl:w-1/2">
+
+        <p class="text-4xl xl:text-lg font-mono">
+            <span class="font-bold">Voxel</span> is a cutting-edge AI-powered platform designed to transform respiratory healthcare using the most accessible biometric: your voice. It is designed to assist clinicians and patients in the early detection, monitoring, and management of respiratory diseases—particularly Chronic Obstructive Pulmonary Disease (COPD). This smarter diagnostic tools enables multimodal analysis of patient data to shape the future of digital health. Voxel brings the science of sound and intelligence of AI together for better outcomes.
+        </p>
+
+        <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">
+
+        <p class="text-4xl xl:text-lg font-mono">
+            <span class="font-bold">We</span> empower users through cough and voice analysis, offering early screening, personalized monitoring, and clinical insights — all from a simple audio sample. Voxel is your trusted partner at the intersection of medical science and deep technology.
+        </p>
+
+    </div>
+
+    <div class="w-full xl:w-1/2">
+        <Image 
+            src={cough} 
+            alt="Wireframe of man coughing" 
+            class="h-full w-auto rounded-xl"
+        />
+    </div>
     
 </section>
