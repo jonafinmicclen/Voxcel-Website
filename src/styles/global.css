@@ -20,6 +20,9 @@
   }
 }
 
+@utility no-scrollbar {
+  @apply [scrollbar-width:none] [&::-webkit-scrollbar]:hidden;
+}
 
 :root {
     --lavender-blush: #f3e8eeff;
