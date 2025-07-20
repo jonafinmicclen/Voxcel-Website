@@ -26,19 +26,23 @@ const benefits = [
 ];
 ---
 
-<section class="w-full h-32 bg-indigo-300 flex justify-center items-center">
-  <p class="text-6xl font-medium font-mono text-stone-600 text-center">
-    Why Voxcel?
-  </p>
-</section>
+<section class="w-full bg-indigo-500 py-12 px-4">
 
-<section id="benefits" class="w-full bg-indigo-300 py-12 px-4 ">
+  <div class="h-32 w-full flex justify-center items-center mb-8">
+    <p class="text-6xl font-medium font-mono text-white text-shadow-xl text-center">
+      Why Voxcel?
+    </p>
+  </div>
+
   <div class="max-w-2xl xl:max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-6 p-4">
-
     {benefits.map((benefit) => (
-      <button class="group bg-white rounded-2xl xl:rounded-md shadow-md overflow-hidden transform transition-all duration-300 ease-in-out hover:scale-105 shadow-md">
-        <h3 class="text-4xl xl:text-lg font-mono font-semibold text-stone-700 mb-2">{benefit.title}</h3>
-        <p class="text-4xl xl:text-base font-mono text-stone-600">{benefit.description}</p>
+      <button class="group bg-white rounded-2xl xl:rounded-xl shadow-xl overflow-hidden transform transition-all duration-300 ease-in-out hover:scale-105 shadow-md">
+        <h3 class="text-4xl xl:text-lg font-mono font-semibold text-stone-700 mb-2">
+          {benefit.title}
+        </h3>
+        <p class="text-4xl xl:text-base font-mono text-stone-600">
+          {benefit.description}
+          </p>
       </button>
     ))}
 
