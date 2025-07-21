@@ -15,12 +15,18 @@ const timelineItems = [
 
     <!-- Scrollable row -->
     <div class="mask-alpha mask-r-from-black mask-r-from-90% mask-r-to-transparent mask-l-from-black mask-l-from-90% mask-l-to-transparent flex overflow-x-scroll p-4">
+
+      <div class="w-64 flex-shrink-0"></div>
+
       {timelineItems.map((item) => (
         <div class="max-w-sm rounded-lg p-4 flex-shrink-0 transform transition-transform duration-300 ease-in-out hover:scale-105">
           <h3 class="text-4xl xl:text-xl font-mono font-semibold text-stone-700 mb-2">{item.year}</h3>
           <p class="text-4xl xl:text-base font-mono text-stone-600">{item.title}</p>
         </div>
       ))}
+
+<div class="w-64 flex-shrink-0"></div>
+
     </div>
 
   </div>
