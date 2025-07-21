@@ -25,13 +25,11 @@ const startupsteps = [
 
 <section id="getstarted" class="flex flex-col w-full bg-indigo-500">
 
-    <p class="p-10 text-6xl font-medium font-mono text-white text-shadow-xl text-center">
-        Get Started
-    </p>
+
 
   <div class="max-w-2xl xl:max-w-6xl mx-auto flex flex-col gap-6 p-4 justify-items-center">
     {startupsteps.map((benefit, index) => (
-      <div class="max-w-lg group bg-white rounded-2xl xl:rounded-xl shadow-xl overflow-hidden transform transition-all duration-300 ease-in-out hover:scale-105 shadow-md p-5">
+      <div class="max-w-xl w-full group bg-white rounded-2xl xl:rounded-xl shadow-xl overflow-hidden transform transition-all duration-300 ease-in-out hover:scale-105 shadow-md p-5">
         <h3 class="text-4xl xl:text-lg font-mono font-semibold text-stone-700 mb-2">
             Step {index+1}: {benefit.title}
         </h3>

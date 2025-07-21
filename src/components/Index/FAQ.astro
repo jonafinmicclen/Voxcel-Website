@@ -15,7 +15,7 @@ const frequently_asked_questions=
     },
     {
         question:"Can Voxel diagnose diseases?",
-        answer:"Voxel provides AI-driven health insights and alerts. Diagnosis should always be confirmed by a licensed healthcare provider."
+        answer:"Voxel provides AI-driven health insights and alerts. Diagnosis can only be made through a licensed healthcare provider."
     },
     {
         question:"Can I share results with my doctor?",
@@ -24,15 +24,19 @@ const frequently_asked_questions=
 ]
 ---
 
-<div
-class="mt-8 bg-white rounded-3xl text-base-900 divide-y divide-base-100"
->
-{
-  frequently_asked_questions.map((faq, i) => (
-    <details class="px-8 py-6 group">
-      <summary class="cursor-pointer text-sm font-medium  flex justify-between items-center">
-        {faq.question}
-        <svg
+<div id="faq" class="max-w-2xl xl:max-w-6xl mx-auto flex flex-col justify-items-center">
+    <p class="p-10 text-6xl font-medium font-mono text-stone-600 text-center text-shadow-md">
+        Frequently Asked Questions
+    </p>
+    <div class="max-w-xl xl:max-w-lg w-full mx-auto flex flex-col gap-6 p-4 justify-items-center">
+    {
+        frequently_asked_questions.map((faq, i) => (
+
+            <details class="bg-indigo-500 w-full group rounded-2xl xl:rounded-xl shadow-xl overflow-hidden transform transition-all duration-300 ease-in-out hover:scale-105 shadow-md p-5">
+
+                <summary class="cursor-pointer font-mono text-white font-semibold flex justify-between items-center text-4xl xl:text-lg">
+                    {faq.question}
+                    <svg
           class="size-4 ml-2 transform transition-transform group-open:rotate-180"
           fill="currentColor"
           viewBox="0 0 20 20"
@@ -44,9 +48,11 @@ class="mt-8 bg-white rounded-3xl text-base-900 divide-y divide-base-100"
             clip-rule="evenodd"
           />
         </svg>
-      </summary>
-      <p class="mt-2 text-xs text-base-600">{faq.answer}</p>
-    </details>
-  ))
-}
+                </summary>
+
+            <p class="mt-2 text-white font-mono text-4xl xl:text-base">{faq.answer}</p>
+            </details>
+        ))
+    }
+    </div>
 </div>
