@@ -1,0 +1,52 @@
+---
+const frequently_asked_questions=
+[
+    {
+        question:"Is Voxel a medical device?",
+        answer:"Not yet. Currently, Voxel is a health companion app under clinical research. Regulatory approvals are part of our roadmap."
+    },
+    {
+        question:"Do I need hospital equipment to use Voxel?",
+        answer:"No. You only need a smartphone or computer with a microphone."
+    },
+    {
+        question:"Is my data secure?",
+        answer:"Absolutely. All recordings and health data are encrypted and stored following GDPR and NHS data standards."
+    },
+    {
+        question:"Can Voxel diagnose diseases?",
+        answer:"Voxel provides AI-driven health insights and alerts. Diagnosis should always be confirmed by a licensed healthcare provider."
+    },
+    {
+        question:"Can I share results with my doctor?",
+        answer:"Yes, easily. You can export reports or link your clinician to your profile."
+    },
+]
+---
+
+<div
+class="mt-8 bg-white rounded-3xl text-base-900 divide-y divide-base-100"
+>
+{
+  frequently_asked_questions.map((faq, i) => (
+    <details class="px-8 py-6 group">
+      <summary class="cursor-pointer text-sm font-medium  flex justify-between items-center">
+        {faq.question}
+        <svg
+          class="size-4 ml-2 transform transition-transform group-open:rotate-180"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M5.23 7.21a.75.75 0 011.06.02L10 10.939l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0l-4.24-4.24a.75.75 0 01.02-1.06z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </summary>
+      <p class="mt-2 text-xs text-base-600">{faq.answer}</p>
+    </details>
+  ))
+}
+</div>
