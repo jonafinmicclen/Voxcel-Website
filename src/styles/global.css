@@ -63,3 +63,11 @@
 .bg-primary{
   @apply bg-indigo-500;
 }
+
+.bg-dark{
+  @apply bg-gray-700;
+}
+
+.rounded-default{
+  @apply rounded-xl;
+}
