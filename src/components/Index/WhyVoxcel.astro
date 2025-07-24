@@ -34,10 +34,10 @@ const benefits = [
 section_id="whyvoxcel" 
 section_title="Why Voxcel" 
 background_color="bg-primary" 
-text_color="text-white">
+text_color="text-color-light">
 
   <div class="grid grid-cols-1 lg:grid-cols-3 default-gap default-padding">
-    {benefits.map((benefit, index) => (
+    {benefits.map((benefit) => (
       <BenefitCard
         title={benefit.title}
         description={benefit.description}

@@ -71,3 +71,11 @@
 .rounded-default{
   @apply rounded-xl;
 }
+
+.text-color-light{
+  @apply text-white;
+}
+
+.masked-edges{
+  @apply mask-alpha mask-r-from-black mask-r-from-90% mask-r-to-transparent mask-l-from-black mask-l-from-90% mask-l-to-transparent;
+}
