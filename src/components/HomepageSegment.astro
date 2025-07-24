@@ -1,0 +1,25 @@
+---
+
+const { 
+    section_id = "", 
+    section_title = "", 
+    background_color = "", 
+    text_color=""
+} = Astro.props;
+
+---
+
+<div id={section_id} class= {"w-full py-12 px-4 " + background_color}>
+
+    <div class="max-w-2xl xl:max-w-6xl flex flex-col mx-auto">
+
+        <p class={"p-10 text-6xl font-medium font-mono text-center text-shadow-md "+ text_color}>
+            {section_title}
+        </p>
+
+        <div class="max-w-2xl xl:max-w-6xl mx-auto">
+            <slot/>
+        </div>
+
+    </div>
+</div>

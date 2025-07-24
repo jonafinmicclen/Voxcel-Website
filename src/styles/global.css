@@ -31,3 +31,35 @@
     --paynes-gray: #475b63ff;
     --raisin-black: #2e2c2fff;
 }
+
+.grow-on-hover {
+  @apply transform transition-all duration-300 ease-in-out hover:scale-105;
+}
+
+.primary-text {
+  @apply text-4xl xl:text-lg font-mono text-stone-600;
+}
+
+.heading-text-size{
+  @apply text-6xl xl:text-5xl font-medium;
+}
+
+.card-default{
+  @apply max-w-xl w-full bg-white rounded-2xl xl:rounded-xl shadow-xl overflow-hidden transform transition-all duration-300 hover:scale-105 shadow-md p-5;
+}
+
+.max-w-primary{
+  @apply max-w-3xl xl:max-w-6xl w-full;
+}
+
+.default-gap{
+  @apply gap-6;
+}
+
+.default-padding{
+  @apply p-4;
+}
+
+.bg-primary{
+  @apply bg-indigo-500;
+}

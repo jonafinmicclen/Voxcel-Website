@@ -16,7 +16,7 @@ const sections = [
         <Image src={logo} alt="Voxcel logo" class="w-1/7 h-auto"/>
         
         {sections.map(({ id, label }) => (
-        <a href={`#${id}`} class="transform transition-all duration-300 ease-in-out hover:scale-115 text-4xl xl:text-xl font-semibold font-mono text-stone-600 my-auto">{label}</a>
+        <a href={`#${id}`} class="grow-on-hover primary-text font-semibold my-auto">{label}</a>
         ))}
 
     </nav>
