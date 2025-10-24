@@ -17,7 +17,10 @@ Unfortunately the creator of the AI model behind Voxcel ran into licensing issue
 ## How to view website on live server
 
 1. Clone the respository.
-2. Create python enviroment
-3. Install requirments.txt
+2. Make sure you have Node.js installed.
+3. Install requirements `npm install`
 4. In the working directory run `npm run dev`
 
+## Requirements
+
+- Node.js
