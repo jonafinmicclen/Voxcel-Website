@@ -12,7 +12,7 @@ export default defineConfig({
 
   ...({
     site: "https://jonafinmicclen.github.io/voxcel-website",
-    base: "voxcel-website",
+    base: "/voxcel-website/",
     outDir: "./docs",
   }),
 });
