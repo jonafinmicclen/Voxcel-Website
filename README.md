@@ -13,3 +13,11 @@ Unfortunately the creator of the AI model behind Voxcel ran into licensing issue
 
 - Astro         was chosen as beginning this I had minimal web dev experience. I researched different options and Astro seemed the fastest and easiest for the requirements of this website.
 - TailwindCSS   similar to the above, chose as its easy to use and saved me from having to do any complex CSS.
+
+## How to view website on live server
+
+1. Clone the respository.
+2. Create python enviroment
+3. Install requirments.txt
+4. In the working directory run `npm run dev`
+
