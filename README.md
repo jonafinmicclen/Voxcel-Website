@@ -8,3 +8,8 @@ Unfortunately the creator of the AI model behind Voxcel ran into licensing issue
 
 - Creating this website
 - Creating an app (Voxcel was disbanded before this counld happen)
+
+## Rationale for stack choices
+
+- Astro         was chosen as beginning this I had minimal web dev experience. I researched different options and Astro seemed the fastest and easiest for the requirements of this website.
+- TailwindCSS   similar to the above, chose as its easy to use and saved me from having to do any complex CSS.
