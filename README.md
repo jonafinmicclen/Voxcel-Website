@@ -4,6 +4,8 @@ This was a website for the now disbanded Voxcel startup. Voxcel aimed to publici
 
 Unfortunately the creator of the AI model behind Voxcel ran into licensing issues as the model was created alongside their PHD supervisor.
 
+[Visit site](https://jonafinmicclen.github.io/voxcel-website/)
+
 ## My involvement with voxcel
 
 - Creating this website
@@ -14,7 +16,7 @@ Unfortunately the creator of the AI model behind Voxcel ran into licensing issue
 - Astro         was chosen as beginning this I had minimal web dev experience. I researched different options and Astro seemed the fastest and easiest for the requirements of this website.
 - TailwindCSS   similar to the above, chose as its easy to use and saved me from having to do any complex CSS.
 
-## How to view website on live server
+## How to view website on dev server
 
 1. Clone the respository.
 2. Make sure you have Node.js installed.
