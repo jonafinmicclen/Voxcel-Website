@@ -4,7 +4,8 @@ This was a website for the now disbanded Voxcel startup. Voxcel aimed to publici
 
 Unfortunately the creator of the AI model behind Voxcel ran into licensing issues as the model was created alongside their PHD supervisor.
 
-[Visit site](https://jonafinmicclen.github.io/Voxcel-Website/)
+[![Preview Site](https://img.shields.io/badge/Preview-Site-blue)](https://<your-username>.github.io/<repo-name>/)
+
 
 ## My involvement with voxcel
 
